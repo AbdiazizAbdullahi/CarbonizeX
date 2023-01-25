@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState} from "react";
 
 
 const Fuel = () => {
@@ -13,10 +13,10 @@ const Fuel = () => {
     e.preventDefault();
 
     const requestBody = {
-        type: "fuel_combustion",
-        fuel_source_type: "dfo",
-        fuel_source_unit: "btu",
-        fuel_source_value: 2,
+      type: "fuel_combustion",
+      fuel_source_type: "dfo",
+      fuel_source_unit: "btu",
+      fuel_source_value: (inputValue),
     };
 
     try {
@@ -36,19 +36,20 @@ const Fuel = () => {
   };
 
 
-    return(
+  return(
+    <div>
         <div>
-            <div>
-                <h4>Enter the Electricity Units to estimate</h4>
-                <form onSubmit={handleSubmit}>
-                    <input type="number" />
-                    <button type="submit">Estimate</button>
-                </form>
-            </div>
-
-            <Ecard/>
+            <h4>Enter the Electricity Units to estimate</h4>
+            <form onSubmit={handleSubmit}>
+                <input type="number" value={inputValue} onChange={handleChange}/>
+                <button type="submit">Estimate</button>
+            </form>
         </div>
-    )
+
+        {response.data && response.data.attributes && <p>Carbon Emission: {response.data.attributes.carbon_kg} kg</p>}
+        
+    </div>
+  )
 }
 
 export default Fuel;
