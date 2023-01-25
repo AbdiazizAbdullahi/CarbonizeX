@@ -35,7 +35,6 @@ const Stima = () => {
     }
   };
 
-  console.log(response)
 
 
   return(
