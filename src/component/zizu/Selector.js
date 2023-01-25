@@ -9,7 +9,7 @@ function Selector(){
             <h3>Choose one of the following</h3>
             <div>
                 <ul>
-                    <li> Electricy</li>
+                    <li> Electricity</li>
                     <li> Fuel</li>
                     <li> Shipping</li>
                 </ul>
