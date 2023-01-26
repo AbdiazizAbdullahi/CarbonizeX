@@ -3,33 +3,37 @@ import MaterialTable from "material-table";
 
 export const Table = () => {
     const data = [
-      { country: "", grams: "", kgs: "", pounds: "" },
-      { country: "", grams: "", kgs: "", pounds: "" },
-      { country: "", grams: "", kgs: "", pounds: "" },
-      { country: "", grams: "", kgs: "", pounds: "" },
-      { country: "", grams: "", kgs: "", pounds: "" },
-      { country: "", grams: "", kgs: "", pounds: "" },
+      { electricity_value: "", carbon_g: "", carbon_lb: "", carbon_kg: "", carbon_mt: "" },
+      { electricity_value: "", carbon_g: "", carbon_lb: "", carbon_kg: "", carbon_mt: "" },
+      { electricity_value: "", carbon_g: "", carbon_lb: "", carbon_kg: "", carbon_mt: "" },
+      { electricity_value: "", carbon_g: "", carbon_lb: "", carbon_kg: "", carbon_mt: "" },
+      { electricity_value: "", carbon_g: "", carbon_lb: "", carbon_kg: "", carbon_mt: "" },
+      { electricity_value: "", carbon_g: "", carbon_lb: "", carbon_kg: "", carbon_mt: "" },
     ];
   };
 
 
   const columns = [
     {
-      title: "Country",
-      field: "country",
+      title: "Electricity_value",
+      field: "electricity_value",
     },
     {
-      title: "Grams",
-      field: "grams",
+      title: "Carbon_g",
+      field: "carbon_g",
     },
     {
-      title: "Kgs",
-      field: "kgs",
+      title: "Carbon_lb",
+      field: "carbon_lb",
     },
     {
-      title: "Pounds",
-      field: "pounds",
+      title: "Carbon_kg",
+      field: "carbon_kg",
     },
+    {
+      title: "Carbon_mt",
+      field: "carbon_mt",
+    }
   ];
 
   return (
