@@ -8,12 +8,13 @@ import Navbar from './HomePage/NavBar';
 import Shipping from './zizu/Shipping';
 import Login from './HomePage/Login';
 import Home from './HomePage/Home'
+import GetData from './visual/GetData';
 
 function App() {
   return (
     <BrowserRouter>
     <Navbar/>
-
+    <GetData/>
     <Routes>
       <Route path="/zizu/Stima" element={<Stima />} ></Route>
       <Route path="/zizu/Fuel" element={<Fuel/>} ></Route>
