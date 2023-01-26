@@ -32,4 +32,8 @@ export const Table = () => {
     },
   ];
 
+  return (
+    <MaterialTable title="Carbon Estimates" data={data} columns={columns} />
+  );
+
   
