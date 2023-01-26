@@ -11,13 +11,13 @@ function Selector(){
             <div>
                 <ul>
                     <li>
-                        <Link to="/estimate/stima">Electricity</Link>
+                        <Link to="/zizu/Stima">Electricity</Link>
                     </li>
                     <li>
-                        <Link to="/estimate/fuel">Fuel</Link>
+                        <Link to="/zizu/Fuel">Fuel</Link>
                     </li>
                     <li>
-                        <Link to="/estimate/shipping">Shipping</Link>
+                        <Link to="/zizu/Shipping">Shipping</Link>
                     </li>
                 </ul>
             </div>
