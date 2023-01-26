@@ -38,12 +38,12 @@ const Stima = () => {
 
 
   return(
-    <div>
-        <div>
-            <h4>Enter the Electricity Units to estimate</h4>
-            <form onSubmit={handleSubmit}>
-                <input type="number" value={inputValue} onChange={handleChange}/>
-                <button type="submit">Estimate</button>
+    <div className="form-container">
+        <div className="form-wrapper">
+            <h4 className="header">Enter the Electricity Units to estimate</h4>
+            <form className="form-f" onSubmit={handleSubmit}>
+                <input className="form-input" type="number" value={inputValue} onChange={handleChange}/>
+                <button className="form-btn" type="submit">Estimate</button>
             </form>
         </div>
 

@@ -37,12 +37,12 @@ const Fuel = () => {
 
 
   return(
-    <div>
-        <div>
-            <h4>Enter the Electricity Units to estimate</h4>
-            <form onSubmit={handleSubmit}>
-                <input type="number" value={inputValue} onChange={handleChange}/>
-                <button type="submit">Estimate</button>
+    <div className="stima-container">
+        <div className="stima-wrapper">
+            <h4 className="header">Enter the Fuel consumed to estimate</h4>
+            <form className="stima-form" onSubmit={handleSubmit}>
+                <input className="stima-input" type="number" value={inputValue} onChange={handleChange}/>
+                <button className="stima-btn" type="submit">Estimate</button>
             </form>
         </div>
 
