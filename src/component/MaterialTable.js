@@ -1,4 +1,4 @@
-import MaterialTable from "material-table";
+import MaterialTable from "material-table"
 
 
 export const Table = () => {
