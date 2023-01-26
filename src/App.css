@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+.form-container{
+  display: flex;
+  justify-content: center;
+  align-items: center; /* changed align-content to align-items */
+  margin: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-wrapper{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; /* added this line to center the child elements within the wrapper */
+  text-align: center;
+  height: 30vh;
+  width: 40vw;
+  border-radius: 20px;
+  background-color: #EAF6FF;
+  padding: 20px; /* added this line to add some padding around the wrapper */
+}
+
+.header{
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 50%;
+  font-size: 1.5em; /* added this line to increase the font size of the header */
+  font-weight: bold; /* added this line to make the header text bold */
+  padding-bottom: 10px; /* added this line to add some space between the header and the form */
+}
+
+.form-form{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center; /* changed align-content to align-items */
+  margin-top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.form-input{
+  width: 15vw;
+  height: 25px;
+  border-radius: 15px;
+  padding: 5px; /* added this line to add some padding inside the input field */
+  margin-right: 10px; /* added this line to add some space between the input and the button */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-btn{
+  border-radius: 15px;
+  background-color: #232528;
+  color: #EAF6FF;
+  padding: 10px 20px; /* added this line to add some padding around the button */
+  font-weight: bold; /* added this line to make the button text bold */
+  cursor: pointer; /* added this line to change the cursor to pointer when hovering over the button */
 }
+
+/* NavBar styling */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+Link {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+Link:hover {
+  color: #ccc;
+}
+

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 
 function Selector(){
@@ -9,9 +10,15 @@ function Selector(){
             <h3>Choose one of the following</h3>
             <div>
                 <ul>
-                    <li> Electricity</li>
-                    <li> Fuel</li>
-                    <li> Shipping</li>
+                    <li>
+                        <Link to="/estimate/stima">Electricity</Link>
+                    </li>
+                    <li>
+                        <Link to="/estimate/fuel">Fuel</Link>
+                    </li>
+                    <li>
+                        <Link to="/estimate/shipping">Shipping</Link>
+                    </li>
                 </ul>
             </div>
         </div>
