@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import Ecard from "./EmissionCard";
 
 const Shipping = () => {
     const [response, setResponse] = useState({});
@@ -55,7 +56,9 @@ const Shipping = () => {
                   </form>
               </div>
   
-              {response.data && response.data.attributes && <p>Carbon Emission: {response.data.attributes.carbon_kg} kg</p>}
+              <div>
+        {response.data && response.data.attributes && <Ecard amount={response.data.attributes.carbon_kg}/>}
+        </div>
               
           </div>
       )

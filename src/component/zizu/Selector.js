@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 
 function Selector(){
     return(
-        <div>
-            <p>Carbon Facts </p>
-            <h2>Lets Calculate your Emissions </h2>
-            <h3>Choose one of the following</h3>
-            <div>
+        <div className="main">
+            <p className="main-p">Carbon Facts </p>
+            <h2 className="main-h2">Lets Calculate your Emissions </h2>
+            <h3 className="main-h3">Choose one of the following</h3>
+            <div className="main-div">
                 <ul>
                     <li>
                         <Link to="/zizu/Stima">Electricity</Link>

@@ -2,10 +2,10 @@ import React from "react";
 
 function Ecard({amount}){
     return(
-        <div>
-            <div>
-                <h3>The amount of carbon the will be emmitted</h3>
-                <h1>{amount}KG</h1>
+        <div className="ecard">
+            <div className="ewrapper">
+                <h3 className="eheader">Carbon emitted is</h3>
+                <div className="enum">{amount} KG</div>
             </div>
         </div>
     )
