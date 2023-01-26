@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 //import Ecard from "./EmissionCard";
 
 const Stima = () => {
@@ -45,6 +46,7 @@ const Stima = () => {
                 <input className="form-input" type="number" value={inputValue} onChange={handleChange}/>
                 <button className="form-btn" type="submit">Estimate</button>
             </form>
+            <Link to="../visual/GetData" >TableLink</Link>
         </div>
 
         {response.data && response.data.attributes && <p>Carbon Emission: {response.data.attributes.carbon_kg} kg</p>}

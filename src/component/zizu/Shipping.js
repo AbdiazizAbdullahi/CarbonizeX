@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import { Link } from "react-router-dom";
 
 const Shipping = () => {
     const [response, setResponse] = useState({});
@@ -53,6 +54,7 @@ const Shipping = () => {
                       <input type="number" value={distance} onChange={handleDistanceChange} placeholder="distance" />
                       <button type="submit">Estimate</button>
                   </form>
+                  <Link to="../visual/GetData" >TableLink</Link>
               </div>
   
               {response.data && response.data.attributes && <p>Carbon Emission: {response.data.attributes.carbon_kg} kg</p>}

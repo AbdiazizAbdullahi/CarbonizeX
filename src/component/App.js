@@ -14,13 +14,13 @@ function App() {
   return (
     <BrowserRouter>
     <Navbar/>
-    <GetData/>
     <Routes>
       <Route path="/zizu/Stima" element={<Stima />} ></Route>
       <Route path="/zizu/Fuel" element={<Fuel/>} ></Route>
       <Route path="/zizu/Shipping" element={<Shipping/>} ></Route>
       <Route path="/login" element={<Login/>} ></Route>
       <Route path="/estimate" element={<Selector/>} ></Route>
+      <Route path="/visual/GetData" element={<GetData/>} ></Route>
       <Route exact path="/" element={<Home/>} ></Route>
     </Routes>  
   </BrowserRouter>

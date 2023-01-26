@@ -1,4 +1,5 @@
 import React, { useState} from "react";
+import { Link } from "react-router-dom";
 
 
 const Fuel = () => {
@@ -44,6 +45,7 @@ const Fuel = () => {
                 <input className="stima-input" type="number" value={inputValue} onChange={handleChange}/>
                 <button className="stima-btn" type="submit">Estimate</button>
             </form>
+            <Link to="../visual/GetData" >TableLink</Link>
         </div>
 
         {response.data && response.data.attributes && <p>Carbon Emission: {response.data.attributes.carbon_kg} kg</p>}
