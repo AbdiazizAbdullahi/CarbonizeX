@@ -50,3 +50,40 @@
   font-weight: bold; /* added this line to make the button text bold */
   cursor: pointer; /* added this line to change the cursor to pointer when hovering over the button */
 }
+
+/* NavBar styling */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+Link {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+Link:hover {
+  color: #ccc;
+}
+
