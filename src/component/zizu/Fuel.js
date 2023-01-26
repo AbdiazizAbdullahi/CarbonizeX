@@ -1,4 +1,5 @@
 import React, { useState} from "react";
+import Ecard from "./EmissionCard";
 
 
 const Fuel = () => {
@@ -37,17 +38,17 @@ const Fuel = () => {
 
 
   return(
-    <div className="stima-container">
-        <div className="stima-wrapper">
+    <div className="form-container">
+        <div className="form-wrapper">
             <h4 className="header">Enter the Fuel consumed to estimate</h4>
-            <form className="stima-form" onSubmit={handleSubmit}>
-                <input className="stima-input" type="number" value={inputValue} onChange={handleChange}/>
-                <button className="stima-btn" type="submit">Estimate</button>
+            <form className="form-form" onSubmit={handleSubmit}>
+                <input className="form-input" type="number" value={inputValue} onChange={handleChange}/>
+                <button className="form-btn" type="submit">Estimate</button>
             </form>
         </div>
-
-        {response.data && response.data.attributes && <p>Carbon Emission: {response.data.attributes.carbon_kg} kg</p>}
-        
+        <div>
+        {response.data && response.data.attributes && <Ecard amount={response.data.attributes.carbon_kg}/>}
+        </div>
     </div>
   )
 }
