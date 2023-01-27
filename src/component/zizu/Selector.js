@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Selector(){
     return(
         <div className="main">
-            <p className="main-p"><h3>Did you know</h3> Carbon dioxide (CO2) is the primary greenhouse gas emitted through human activities. It is responsible for about 78% of the total greenhouse gas emissions from human activities.</p>
+            {/* <p className="main-p"><h3>Did you know</h3> Carbon dioxide (CO2) is the primary greenhouse gas emitted through human activities. It is responsible for about 78% of the total greenhouse gas emissions from human activities.</p> */}
             <h2 className="main-h2">Lets Calculate your Emissions </h2>
             <h3 className="main-h3">Choose one of the following</h3>
             <div className="main-div">
