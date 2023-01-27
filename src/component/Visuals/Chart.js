@@ -1,7 +1,7 @@
 import React from "react";
-//import {Pie, PieChart, Tooltip} from'recharts';
+import {Pie, PieChart, Tooltip} from'recharts';
 
-const Chart = ({electric, fuel, shipping, Pie, PieChart, Tooltip})=> {
+const Chart = ({electric, fuel, shipping})=> {
         
     
     return(
