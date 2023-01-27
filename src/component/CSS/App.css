@@ -40,6 +40,7 @@
   width: 15vw;
   height: 25px;
   border-radius: 15px;
+  margin: 5px;
   padding: 5px; /* added this line to add some padding inside the input field */
   margin-right: 10px; /* added this line to add some space between the input and the button */
 }
@@ -48,6 +49,7 @@
   border-radius: 15px;
   background-color: #232528;
   color: #EAF6FF;
+  margin: 5px;
   padding: 10px 20px; /* added this line to add some padding around the button */
   font-weight: bold; /* added this line to make the button text bold */
   cursor: pointer; /* added this line to change the cursor to pointer when hovering over the button */
@@ -64,11 +66,13 @@ nav {
 
 .brand{
   color: #EAF6FF;
+  text-decoration: none;
 }
 
 .menu{
   color: #EAF6FF;
   margin-right: 10px;
+  text-decoration: none;
 }
 
 .nav-left {
@@ -88,13 +92,13 @@ nav {
 }
 
 Link {
-  color: #fff;
+  color: #6c8aa0;
   text-decoration: none;
   margin: 0 10px;
 }
 
 Link:hover {
-  color: #ccc;
+  color: #EAF6FF;
 }
 
 .ecard{
@@ -132,4 +136,208 @@ Link:hover {
   padding: 5px; /* added this line to add some padding inside the input field */
   margin-top: 16px; 
 }
+
+/* styling selector */
+body{
+  background-image: url('/home/abdiaziz/Development/code/PROJECTS/ECO-Emissions/src/component/images/ssscribble.svg');
+  background-color: #7373da;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  color: #EAF6FF;
+}
+
+.main-div{
+   /* Prevent items from wrapping to new lines */
+  
+}
+
+.main-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.child-div{
+  flex: 1; /* Divide the available space equally among the items */
+  list-style: none;
+  flex-direction: row; /* Remove bullet points */
+}
+
+.img1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  color: #EAF6FF;
+  text-decoration: none;
+  background-image: url('/home/abdiaziz/Development/code/PROJECTS/ECO-Emissions/src/component/images/electricity.jpg');
+  height: 188px;
+  width: 300px;
+  border-radius: 15px;
+}
+
+.img2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  color: #EAF6FF;
+  background-image: url('/home/abdiaziz/Development/code/PROJECTS/ECO-Emissions/src/component/images/fuel.jpg');
+  height: 188px;
+  background-position: 50%;
+  width: 300px;
+  border-radius: 15px;
+  
+}
+
+.img3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  color: #EAF6FF;
+  background-image: url('/home/abdiaziz/Development/code/PROJECTS/ECO-Emissions/src/component/images/shipping.jpg');
+  height: 188px;
+  width: 300px;
+  border-radius: 15px;
+}
+
+.slink{
+  text-decoration: none;
+}
+
+
+
+
+/* homepage styling */
+header{
+  color: white;
+  background: #37387a;
+  background-image: url('/home/abdiaziz/Development/code/PROJECTS/ECO-Emissions/src/component/images/home.jpg');
+  min-height: 50vh;
+  padding-top: 20vh;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+header h1{
+  font-size: 3rem;
+  margin: 0 0 1rem;
+}
+
+header h2{
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin: 0 0 1rem;
+}
+
+.h-btn{
+  background-color: #232528;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  border-color: #EAF6FF;
+  font-size: larger;
+  
+  transition: all 2s ease-in-out;
+  animation: h-btn-animation 0.5s ease-in-out infinite alternate;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+}
+
+.btn-link{
+  text-decoration: none;
+}
+
+@keyframes h-btn-animation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.h-btn:hover{
+  background-color: #2a2a72;
+  transform: rotate(360deg);
+}
+
+header a{
+  color: #ffff;
+}
+
+/* styling background */
+.bg2-container{
+  width: 100%;
+  height: 400px;
+}
+
+.bg2-image{
+  color: white;
+  background: #37387a;
+  background-image: url('/home/abdiaziz/Development/code/PROJECTS/ECO-Emissions/src/component/images/hompageimage.png');
+  min-height: 50vh;
+  padding-top: 20vh;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  
+  
+}
+
+.bg-body{
+  font-style: italic;
+}
+
+/* footer styling */
+.footer {
+  background: #37387a;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+  font-size: .8rem;
+  color: rgba(white,.4);
+}
+
+.footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer li {
+  display: inline-block;
+}
+
+.footer a {
+  display: block;
+  padding: .4rem .7rem;
+  font-size: .9rem;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer a:hover {
+  color: rgb(214, 214, 214);
+}
+
 

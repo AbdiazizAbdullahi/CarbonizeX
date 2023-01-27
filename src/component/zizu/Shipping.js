@@ -46,13 +46,13 @@ const Shipping = () => {
   
   
       return(
-          <div>
-              <div>
-                  <h4>Enter the Shipping Units to estimate</h4>
-                  <form onSubmit={handleSubmit}>
-                      <input type="number" value={weight} onChange={handleWeightChange} placeholder="weight" />
-                      <input type="number" value={distance} onChange={handleDistanceChange} placeholder="distance" />
-                      <button type="submit">Estimate</button>
+          <div className="form-container">
+              <div className="form-wrapper">
+                  <h4 className="header">Enter the Shipping Details to estimate</h4>
+                  <form className="form-f" onSubmit={handleSubmit}>
+                      <input className="form-input" type="number" value={weight} onChange={handleWeightChange} placeholder="weight in KG" />
+                      <input className="form-input" type="number" value={distance} onChange={handleDistanceChange} placeholder="distance in KM" />
+                      <button className="form-btn" type="submit">Estimate</button>
                   </form>
               </div>
   
