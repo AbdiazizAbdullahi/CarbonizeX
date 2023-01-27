@@ -139,7 +139,7 @@ Link:hover {
 
 /* styling selector */
 body{
-  background-image: url('/home/abdiaziz/Development/code/PROJECTS/ECO-Emissions/src/component/images/ssscribble.svg');
+  background-image: url('/public/ssscribble.svg');
   background-color: #7373da;
 }
 
@@ -175,7 +175,7 @@ body{
   margin: 20px;
   color: #EAF6FF;
   text-decoration: none;
-  background-image: url('/home/abdiaziz/Development/code/PROJECTS/ECO-Emissions/src/component/images/electricity.jpg');
+  background-image: url('/public/electricity.jpg');
   height: 188px;
   width: 300px;
   border-radius: 15px;
@@ -187,7 +187,7 @@ body{
   align-items: center;
   margin: 20px;
   color: #EAF6FF;
-  background-image: url('/home/abdiaziz/Development/code/PROJECTS/ECO-Emissions/src/component/images/fuel.jpg');
+  background-image: url('/public/fuel.jpg');
   height: 188px;
   background-position: 50%;
   width: 300px;
@@ -201,7 +201,7 @@ body{
   align-items: center;
   margin: 20px;
   color: #EAF6FF;
-  background-image: url('/home/abdiaziz/Development/code/PROJECTS/ECO-Emissions/src/component/images/shipping.jpg');
+  background-image: url('/public/shipping.jpg');
   height: 188px;
   width: 300px;
   border-radius: 15px;
@@ -218,7 +218,7 @@ body{
 header{
   color: white;
   background: #37387a;
-  background-image: url('/home/abdiaziz/Development/code/PROJECTS/ECO-Emissions/src/component/images/home.jpg');
+  background-image: url('/home/abdiaziz/Development/code/PROJECTS/ECO-Emissions/public/home.jpg');
   min-height: 50vh;
   padding-top: 20vh;
   text-align: center;
@@ -291,7 +291,7 @@ header a{
 .bg2-image{
   color: white;
   background: #37387a;
-  background-image: url('/home/abdiaziz/Development/code/PROJECTS/ECO-Emissions/src/component/images/hompageimage.png');
+  background-image: url('/public/hompageimage.png');
   min-height: 50vh;
   padding-top: 20vh;
   text-align: center;
