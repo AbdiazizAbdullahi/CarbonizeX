@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Ecard from "./EmissionCard";
+import { Link } from 'react-router-dom';
 
 const Stima = () => {
   const [response, setResponse] = useState({});
@@ -42,9 +43,10 @@ const Stima = () => {
         <div className="form-wrapper">
             <h4 className="header">Enter the Electricity Units to estimate</h4>
             <form className="form-f" onSubmit={handleSubmit}>
-                <input className="form-input" type="number" value={inputValue} onChange={handleChange}/>
+                <input className="form-input" type="number" value={inputValue} onChange={handleChange} placeholder="Kwh Units" />
                 <button className="form-btn" type="submit">Estimate</button>
             </form>
+            <Link to="../visual/GetData" >TableLink</Link>
         </div>
 
         {response.data && response.data.attributes && <Ecard amount={response.data.attributes.carbon_kg}/>}

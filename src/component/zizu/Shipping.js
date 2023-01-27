@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import Ecard from "./EmissionCard";
+import { Link } from 'react-router-dom';
 
 const Shipping = () => {
     const [response, setResponse] = useState({});
@@ -54,6 +55,7 @@ const Shipping = () => {
                       <input className="form-input" type="number" value={distance} onChange={handleDistanceChange} placeholder="distance in KM" />
                       <button className="form-btn" type="submit">Estimate</button>
                   </form>
+                  <Link to="../visual/GetData" >TableLink</Link>
               </div>
   
               <div>
