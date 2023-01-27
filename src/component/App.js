@@ -8,6 +8,7 @@ import Navbar from './HomePage/NavBar';
 import Shipping from './zizu/Shipping';
 import Login from './HomePage/Login';
 import Home from './HomePage/Home'
+import AboutUs from './HomePage/About';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Route path="/zizu/Shipping" element={<Shipping/>} ></Route>
       <Route path="/login" element={<Login/>} ></Route>
       <Route path="/estimate" element={<Selector/>} ></Route>
+      <Route exact path="/aboutus" element={<AboutUs/>} ></Route>
       <Route exact path="/" element={<Home/>} ></Route>
     </Routes>  
   </BrowserRouter>
