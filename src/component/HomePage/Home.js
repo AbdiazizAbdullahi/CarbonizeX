@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+//import "./Home.css"; // import your CSS file
 
 function Home(){
     return(
@@ -10,6 +11,9 @@ function Home(){
                     <h2>Join the climate conscious movement</h2>
                     <button className="h-btn"><Link className="btn-link" to="/estimate" >Know your emissions</Link> </button>
                 </div>
+                <div className="carbon-video-container">
+                <video className="carbon-video" src="https://assets.mixkit.co/videos/preview/mixkit-chimney-and-smoke-in-an-industrial-landscape-14051-large.mp4" autoPlay loop />
+            </div>
             </header>
             <div  className="bg2-image">
                 <div className="bg2-container">
@@ -21,20 +25,18 @@ function Home(){
                     </div>
                 </div> 
             </div>
-
+            
             <footer >
             <div className="footer">
                 <ul>
-                    <li><Link exact to="/estimate">Estimate</Link></li>
+                    <li><Link to="/">Home</Link></li>
                     <li><Link to="/aboutus">About Us</Link></li>
                     <li><Link to="/login">Login</Link></li>
                 </ul>
-
                 <p> All rights reserved.</p>
             </div>
         </footer>
         </React.Fragment>
     )
 }
-
 export default Home;
