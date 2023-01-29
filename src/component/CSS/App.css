@@ -218,7 +218,7 @@ body{
 header{
   color: white;
   background: #37387a;
-  background-image: url('/home/abdiaziz/Development/code/PROJECTS/ECO-Emissions/public/home.jpg');
+  background-image: url('/public/home.jpg');
   min-height: 50vh;
   padding-top: 20vh;
   text-align: center;
