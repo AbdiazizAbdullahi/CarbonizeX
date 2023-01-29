@@ -46,7 +46,8 @@ const Stima = () => {
                 <input className="form-input" type="number" value={inputValue} onChange={handleChange} placeholder="Kwh Units" />
                 <button className="form-btn" type="submit">Estimate</button>
             </form>
-            <Link to="../visual/GetData" >TableLink</Link>
+            <br />
+            <Link className="form-btn" to="../visual/GetData" >Tables & Charts</Link>
         </div>
 
         {response.data && response.data.attributes && <Ecard amount={response.data.attributes.carbon_kg}/>}

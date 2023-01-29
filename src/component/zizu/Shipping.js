@@ -55,7 +55,8 @@ const Shipping = () => {
                       <input className="form-input" type="number" value={distance} onChange={handleDistanceChange} placeholder="distance in KM" />
                       <button className="form-btn" type="submit">Estimate</button>
                   </form>
-                  <Link to="../visual/GetData" >TableLink</Link>
+                  <br />
+                  <Link className="form-btn" to="../visual/GetData" >TableLink</Link>
               </div>
   
               <div>
