@@ -22,7 +22,7 @@ On each category page, there is a link to a tables page where emissions trend ar
 The app is built using React and uses the Carbon Interface API to retrieve the data for the estimates. Other technologies used include node js, css & html.
 
 # Contributors
-- AbdiazizAbdullahi
+- Abdiaziz Abdullahi
 - Martin Ntwiga
 - Glory Mithika
 - Edson Kimotho

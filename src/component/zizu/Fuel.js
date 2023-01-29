@@ -46,7 +46,8 @@ const Fuel = () => {
                 <input className="form-input" type="number" value={inputValue} onChange={handleChange} placeholder="Units " />
                 <button className="form-btn" type="submit">Estimate</button>
             </form>
-            <Link to="../visual/GetData" >TableLink</Link>
+            <br />
+            <Link className="form-btn" to="../visual/GetData" >TableLink</Link>
         </div>
         <div>
         {response.data && response.data.attributes && <Ecard amount={response.data.attributes.carbon_kg}/>}

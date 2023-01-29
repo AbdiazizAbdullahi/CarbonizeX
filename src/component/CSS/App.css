@@ -11,12 +11,16 @@
   flex-direction: column;
   align-items: center; /* added this line to center the child elements within the wrapper */
   text-align: center;
-  height: 30vh;
+  height: 32vh;
   width: 40vw;
   margin-top: 50px;
   border-radius: 20px;
   background-color: #EAF6FF;
   padding: 20px; /* added this line to add some padding around the wrapper */
+}
+
+.height{
+  height: 40vh;
 }
 
 .header{
@@ -39,7 +43,7 @@
 .form-input{
   width: 15vw;
   height: 25px;
-  border-radius: 15px;
+  border-radius: 10px;
   margin: 5px;
   padding: 5px; /* added this line to add some padding inside the input field */
   margin-right: 10px; /* added this line to add some space between the input and the button */
@@ -53,6 +57,11 @@
   padding: 10px 20px; /* added this line to add some padding around the button */
   font-weight: bold; /* added this line to make the button text bold */
   cursor: pointer; /* added this line to change the cursor to pointer when hovering over the button */
+  text-decoration: none;
+}
+
+.form-btn:hover{
+  background-color: #2a2a72;
 }
 
 /* NavBar styling */
