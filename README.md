@@ -7,7 +7,7 @@ CarbonizeX is a web application that aims to help people make more informed deci
 Climate change is one of the biggest challenges facing our world today. One of the ways we can tackle it is by reducing our carbon emissions. However, it can be difficult to know how much carbon we're emitting and how to reduce it. CarbonizeX will help people know the amount of carbon emissions generated from their activities therefore creating the awareness and enabling actions towards reduction of carbon emissions.
 
 # Using the App
-The app is accessible online via this [link](https://carbonize-x.vercel.app/). Clicking the 'know your emissions' button or estimates button on the homepage will lead you to the various carbon emissions cartegories page. The categories include Electricity, Fuel & Shipping.
+The app is accessible online via this [link](https://radiant-souffle-74def2.netlify.app/). Clicking the 'know your emissions' button or estimates button on the homepage will lead you to the various carbon emissions cartegories page. The categories include Electricity, Fuel & Shipping.
 
 * Electricity<br>
 Enter the consumption in kwh units and click estimate button, the app will then generate the carbon emission in kg.
