@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-//import "./Home.css"; // import your CSS file
 
 function Home(){
     return(
@@ -12,15 +11,15 @@ function Home(){
                     <button className="h-btn"><Link className="btn-link" to="/estimate" >Know your emissions</Link> </button>
                 </div>
                 <div className="carbon-video-container">
-                <video className="carbon-video" src="https://assets.mixkit.co/videos/preview/mixkit-chimney-and-smoke-in-an-industrial-landscape-14051-large.mp4" autoPlay loop />
+                <video className="carbon-video" type="video/mp4" src="https://assets.mixkit.co/videos/preview/mixkit-chimney-and-smoke-in-an-industrial-landscape-14051-large.mp4" autoPlay loop />
             </div>
             </header>
             <div  className="bg2-image">
                 <div className="bg2-container">
-                    <div className="">
+                    <div className="q-wrapper">
                        <p className="bg-body pos1">"Climate change is the biggest global threat facing our planet, and it is the responsibility of each and every one of us to take action."  <small>- Leonardo DiCaprio</small></p> 
                     </div>
-                    <div>
+                    <div className="q2-wrapper">
                        <p className="bg-body pos2">"We are the first generation to feel the impact of climate change and the last generation that can do something about it." <small>- John Kerry</small></p> 
                     </div>
                 </div> 

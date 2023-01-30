@@ -236,12 +236,14 @@ header{
 header h1{
   font-size: 3rem;
   margin: 0 0 1rem;
+  color: #232528;
 }
 
 header h2{
-  font-weight: 300;
+  font-weight: 500;
   font-size: 1.5rem;
   margin: 0 0 1rem;
+  color: #2a2a72;
 }
 
 .h-btn{
@@ -249,6 +251,7 @@ header h2{
   color: white;
   padding: 10px 20px;
   margin-top: 20px;
+  margin-bottom: 40px;
   border-radius: 20px;
   border-color: #EAF6FF;
   font-size: larger;
@@ -299,8 +302,7 @@ header a{
 }
 
 /* Add a slide-in animation to the quote text */
-.bg2-container p::after {
-  filter: blur();
+.bg2-container p {
   animation: slideIn 13s;
 }
 
@@ -323,8 +325,8 @@ header a{
 
 /* Add some styling to the video */
 .carbon-video {
+  height: 75vh;
   width: 100%;
-  height: auto;
   object-fit: cover; 
 }
 
@@ -400,31 +402,6 @@ header a{
   }
 }
 
-/* Add some styling to the footer */
-.footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #333;
-  color: #fff;
-}
-
-/* Add some styling to the footer links */
-.footer ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.footer ul li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-.footer ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
 /* styling background */
 .bg2-container{
   width: 100%;
@@ -434,7 +411,7 @@ header a{
 .bg2-image{
   color: white;
   background: #37387a;
-  background-image: url('/public/hompageimage.png');
+  background-image: url('/public/bg3.jpg');
   min-height: 50vh;
   padding-top: 20vh;
   text-align: center;
@@ -443,17 +420,46 @@ header a{
   overflow: hidden;
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
-  
-  
 }
 
 .bg-body{
-  font-style: italic;
+  margin-left: 10px;
+  font-size: x-large;
+  font-weight: bolder;
+  color: #EAF6FF;
+}
+
+.q-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  width: 35vw;
+  margin-left: 50px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px 20px 0px 20px;
+}
+
+.q2-wrapper{
+  position: absolute;
+  bottom: 10px;
+  right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  width: 35vw;
+  margin-left: 50px;
+  
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px 20px 0px 20px;
 }
 
 /* footer styling */
+/* Add some styling to the footer */
 .footer {
-  background: #37387a;
+  background-image: url('/public/ssscribble.svg');
+  background-color: #37387a;
   color: #fff;
   padding: 2rem 0;
   text-align: center;
@@ -461,14 +467,17 @@ header a{
   color: rgba(white,.4);
 }
 
+/* Add some styling to the footer links */
 .footer ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+
 .footer li {
   display: inline-block;
+  margin: 0 10px;
 }
 
 .footer a {
